@@ -39,4 +39,40 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    position: relative;
+}
+
+/* creates red underline effect */
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: rgb(253, 253, 166);
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {  
+    text-shadow: 3px 5px 2px #5f1e1e;
+    color: #ff0000;
 }
