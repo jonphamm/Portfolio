@@ -82,14 +82,14 @@ nav ul li a:hover {
 }
 
 .left-intro h1 {
-    font-size: 65px;
+    font-size: 60px;
     margin-top: 20px;
 }
 
 .left-intro h1 span {  
     text-shadow: 3px 5px 2px #5f1e1e;
     color: #ff0000;
-}
+} 
 
 .left-intro a {
     margin-top: 30px;
@@ -105,6 +105,7 @@ nav ul li a:hover {
     background-color: red;
     color: white; 
     border: 2px solid red;
+    margin-left: 15px;
 }
 
 .left-intro a:hover {
