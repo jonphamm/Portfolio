@@ -1,9 +1,11 @@
+/* import font family from google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box; /* tells browser to account for any border & padding in the values you specify for an element's width & height */
-    scroll-behavior: smooth;
 }
 
 body {
@@ -11,12 +13,24 @@ body {
     color: #fff;
 }
 
+/* #header {
+     width: 100%;
+    height: 100vh;
+    background-image: url(images/Professional\ Headshot\ No\ BG.png);
+    background-size: cover;
+    background-position: right; 
+} */
+
+/* navigation bar */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px 10%;
+    padding: 10px 8%;
+    background-color: rgb(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
 }
 
 nav ul li {
@@ -28,7 +42,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
 }
 
@@ -52,35 +66,64 @@ nav ul li a:hover {
     color: rgb(255, 255, 0);
 }
 
-
+/* intro section */
 .container {
-    padding: 10px 10%;
-    display: flex;
+    padding-top: 8%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
 }
 
-.intro-left {
-    margin-top: 20%;
+.left-intro {
     font-size: 30px;
-    background-color: white;
+    margin-left: 30px;
+    padding-left: 13%;
 }
 
-.intro-left h1 {
-    font-size: 60px;
+.left-intro h1 {
+    font-size: 65px;
     margin-top: 20px;
 }
 
-.intro-left h1 span {  
+.left-intro h1 span {  
     text-shadow: 3px 5px 2px #5f1e1e;
     color: #ff0000;
 }
 
-.intro-right {
-    display: flex;
-    flex-direction: column;
+.left-intro a {
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 6px;
+    border: 2px solid red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 25px;
+    text-decoration: none;
 }
-.intro-right img {
-   width: 100vh;
-   height: 100%;
-   background-color: aqua;
+.left-intro .btn {
+    background-color: red;
+    color: white; 
+    border: 2px solid red;
+}
+
+.left-intro a:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.9s;
+    color: rgb(0, 0, 0);
+}
+
+.left-intro .btn:hover {
+    background-color: rgb(223, 67, 67);
+    color: rgb(0, 0, 0);
+}
+
+/* services section */
+#services {
+    padding: 20px 0;
+}
+
+.services-list {
+    
 }
 
