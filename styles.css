@@ -6,6 +6,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box; /* tells browser to account for any border & padding in the values you specify for an element's width & height */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,15 +14,15 @@ body {
     color: #fff;
 }
 
-/* #header {
-     width: 100%;
+ /* #header {
+    width: 100%;
     height: 100vh;
-    background-image: url(images/Professional\ Headshot\ No\ BG.png);
+    background-image: url(images/Head2.jpeg);
     background-size: cover;
-    background-position: right; 
-} */
+    background-position: center; 
+}  */
 
-/* navigation bar */
+/* ------------------- NAVBAR ---------------------- */
 nav {
     display: flex;
     justify-content: space-between;
@@ -66,9 +67,8 @@ nav ul li a:hover {
     color: rgb(255, 255, 0);
 }
 
-/* intro section */
+/* --------------------- INTRO SECTION ------------------------- */
 .container {
-    padding-top: 8%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -78,7 +78,8 @@ nav ul li a:hover {
 .left-intro {
     font-size: 30px;
     margin-left: 30px;
-    padding-left: 13%;
+    padding: 8% 0 0 13%;
+    
 }
 
 .left-intro h1 {
@@ -101,7 +102,7 @@ nav ul li a:hover {
     font-size: 25px;
     text-decoration: none;
 }
-.left-intro .btn {
+.left-intro .cv-btn {
     background-color: red;
     color: white; 
     border: 2px solid red;
@@ -110,21 +111,99 @@ nav ul li a:hover {
 
 .left-intro a:hover {
     background-color: rgb(255, 255, 255);
-    transition: 0.9s;
+    transition: 0.75s;
     color: rgb(0, 0, 0);
 }
 
-.left-intro .btn:hover {
-    background-color: rgb(223, 67, 67);
+.left-intro .cv-btn:hover {
+    background-color: rgb(219, 89, 89);
     color: rgb(0, 0, 0);
 }
 
-/* services section */
+.right-intro img {
+    height: 100vh;
+    padding-top: 9%;
+}
+
+/* ------------------------ ABOUT ME SECTION --------------------------- */
+#about {
+    padding: 80px 0;
+    color: #ababab;
+    background-color: rgb(0, 0, 0);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    padding-left: 10%;
+    height: 100vh;
+    border-radius: 16px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+/* services section, not finished
 #services {
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 .services-list {
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
 }
 
+*/
+
+/* -------------------- PORTFOLIO SECTION ------------------ */
+#portfolio {
+    padding: 50px;
+}
+.sub-title2 {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+
+
+
+/* -------------------CSS for smaller screens------------------ */
