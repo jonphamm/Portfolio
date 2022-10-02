@@ -58,6 +58,10 @@
                         electronic typesetting, remaining essentially unchanged. It was popularised in the <br> 
                         1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more <br>
                         recently with desktop publishing software like Aldus PageMaker including versions of <br> Lorem Ipsum.</p>
+
+                    <a href="" class="icons"><i class="fa-brands fa-github"></i></a>
+                    <a href="" class="icons"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/jonphamm/" class="icons"><i class="fa-brands fa-instagram"></i></i></a>
                 </div>
             </div>
         </div>
@@ -73,7 +77,7 @@
                     <div class="layer">
                         <h3>Social Media App</h3>
                         <p>The app allows for interaction with other people.</p>
-                        <a href="#"><i class="fa-regular fa-link"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -81,7 +85,7 @@
                     <div class="layer">
                         <h3>Social Media App</h3>
                         <p>The app allows for interaction with other people.</p>
-                        <a href="#"><i class="fa-regular fa-link"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -89,13 +93,26 @@
                     <div class="layer">
                         <h3>Social Media App</h3>
                         <p>The app allows for interaction with other people.</p>
-                        <a href="#"><i class="fa-regular fa-link"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!------------- CONTACT SECTION --------------->
+        <div id="contact">
+            <div class="contact-container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title2">Contact Me</h1>
+                        <p>jonpham09@gmail.com</p>
+                        <p>(954) 655-7852</p>
+                    </div>
+                    <div class="contact-right"></div>
+                </div>
+            </div>
+        </div>
 
     <!-- services section 
     <div id="services">
@@ -123,16 +140,18 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
     ScrollReveal({
-        reset: true,
-        distance: '80px',
-        duration: 1700,
-        delay: 400
+        // resets after scrolling away --> reset: true,
+        distance: '130px',
+        duration: 950,
+        delay: 0
     });
 
-    ScrollReveal().reveal('.sub-title1, .text-box', { delay: 400, origin: 'right' });
-    ScrollReveal().reveal('.sub-title2, .position', { delay: 500, origin: 'left' });
-    ScrollReveal().reveal('.contact-btn, .cv-btn', { delay: 500, origin: 'bottom' });
-    ScrollReveal().reveal('.work', { delay: 400, origin: 'left', interval: 200 });
+    ScrollReveal().reveal('.sub-title1, .text-box', { delay: 0, origin: 'right', interval: 200 });
+    ScrollReveal().reveal('.sub-title2, .position', { delay: 0, origin: 'left' });
+    ScrollReveal().reveal('.contact-btn, .cv-btn', { delay: 0, origin: 'bottom', interval: 200 });
+    ScrollReveal().reveal('.work', { delay: 0, origin: 'left', interval: 200 });
+    ScrollReveal().reveal('.icons i', { delay: 0, origin: 'bottom', interval: 200 });
+    ScrollReveal().reveal('.about-col-1', { delay: 0, origin: 'left'});
 </script>
 <!-- MAIN JS -->    
 <script src="script.js"></script>

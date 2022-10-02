@@ -32,6 +32,9 @@ nav {
     background-color: rgb(0, 0, 0, 0.9);
     position: fixed;
     width: 100%;
+    z-index: 1; /* places navbar over all other elements when scrolling */
+    position: fixed;
+    top: 0;
 }
 
 nav ul li {
@@ -67,6 +70,14 @@ nav ul li a:hover {
     color: rgb(255, 255, 0);
 }
 
+#progress-bar {
+    height: 6px;
+    width: 200px;
+    background-color: white;
+    top: 0;
+    position: fixed;
+} 
+
 /* --------------------- INTRO SECTION ------------------------- */
 .container {
     display: grid;
@@ -78,8 +89,8 @@ nav ul li a:hover {
 .left-intro {
     font-size: 30px;
     margin-left: 30px;
-    padding: 8% 0 0 13%;
-    
+    padding: 0 0 0 13%;
+    width: 100%;
 }
 
 .left-intro h1 {
@@ -102,6 +113,7 @@ nav ul li a:hover {
     font-size: 25px;
     text-decoration: none;
 }
+
 .left-intro .cv-btn {
     background-color: red;
     color: white; 
@@ -111,7 +123,6 @@ nav ul li a:hover {
 
 .left-intro a:hover {
     background-color: rgb(255, 255, 255);
-    transition: 0.75s;
     color: rgb(0, 0, 0);
 }
 
@@ -121,15 +132,17 @@ nav ul li a:hover {
 }
 
 .right-intro img {
-    height: 100vh;
+    height: auto;
     padding-top: 9%;
+    width: 100%;
 }
 
 /* ------------------------ ABOUT ME SECTION --------------------------- */
 #about {
-    padding: 80px 0;
+    padding: 150px 0 0 0;
     color: #ababab;
     background-color: rgb(0, 0, 0);
+    display: block;
 }
 
 .row {
@@ -145,7 +158,7 @@ nav ul li a:hover {
 .about-col-1 img {
     width: 100%;
     padding-left: 10%;
-    height: 100vh;
+    height: 600px;
     border-radius: 16px;
 }
 
@@ -157,7 +170,38 @@ nav ul li a:hover {
     font-size: 60px;
     font-weight: 600;
     color: white;
+    position: relative;
 }
+
+.sub-title1::before {
+    content: "";
+    position: absolute;
+    left: 20%;
+    bottom: 16px;
+    width: 200px;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(255, 0, 0);
+    z-index: -1;
+  }
+
+.text-box {
+    margin-bottom: 20px;
+}
+
+.icons {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.icons:hover {
+    color: rgb(255, 255, 0);
+    transition: 0.75s;
+    font-size: 42px;
+}
+
 
 /* services section, not finished
 #services {
@@ -175,13 +219,26 @@ nav ul li a:hover {
 
 /* -------------------- PORTFOLIO SECTION ------------------ */
 #portfolio {
-    padding: 50px;
+    padding: 190px 150px 150px 150px;
 }
 .sub-title2 {
     font-size: 60px;
     font-weight: 600;
     color: white;
+    position: relative;
 }
+
+.sub-title2::before {
+    content: "";
+    position: absolute;
+    left: 11%;
+    bottom: 16px;
+    width: 200px;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(255, 0, 0);
+    z-index: -1;
+  }
 
 .work-list {
     display: grid;
@@ -200,7 +257,56 @@ nav ul li a:hover {
     display: block;
     border-radius: 10px;
     width: 100%;
+    transition: transform 0.5s;
 }
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.layer {
+    width: 100%;
+    height: 0; /* zero height hides hover effect over portfolio projects */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* --------------------- CONTACT SECTION --------------------- */
+
 
 
 
