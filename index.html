@@ -34,7 +34,7 @@
                 <h1>Hello, I'm <br><span class="auto-input"></span></h1>
                 <!-- <p>I'm a hobbyist<br>looking to advance towards the<br>professional sector of<br>Web Development.</p> -->
                 <a href="" class="contact-btn">Contact Me</a>
-                <a href="" class="cv-btn">Download CV</a>
+                <a href="https://docs.google.com/document/d/1xlfLO2EtWwbR-QgzNtgtIbD9FfN4PfzKDbWCIOBduVE/edit" target="_blank" class="cv-btn">Download CV</a>
             </div>
             <div class="right-intro">
                 <img src="images/Head.png">
@@ -59,9 +59,9 @@
                         1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more <br>
                         recently with desktop publishing software like Aldus PageMaker including versions of <br> Lorem Ipsum.</p>
 
-                    <a href="" class="icons"><i class="fa-brands fa-github"></i></a>
-                    <a href="" class="icons"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/jonphamm/" class="icons"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://github.com/jonphamm" target="_blank" class="icons"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jonphamm" target="_blank" class="icons"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/jonphamm/" target="_blank" class="icons"><i class="fa-brands fa-instagram"></i></i></a>
                 </div>
             </div>
         </div>
@@ -105,11 +105,18 @@
             <div class="contact-container">
                 <div class="row">
                     <div class="contact-left">
-                        <h1 class="sub-title2">Contact Me</h1>
-                        <p>jonpham09@gmail.com</p>
-                        <p>(954) 655-7852</p>
+                        <h1 class="sub-title3">Contact Me</h1>
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>jonpham09@gmail.com</p>
+                        <p><i class="fa-sharp fa-solid fa-phone"></i>(954) 655-7852</p>
                     </div>
-                    <div class="contact-right"></div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -152,6 +159,7 @@
     ScrollReveal().reveal('.work', { delay: 0, origin: 'left', interval: 200 });
     ScrollReveal().reveal('.icons i', { delay: 0, origin: 'bottom', interval: 200 });
     ScrollReveal().reveal('.about-col-1', { delay: 0, origin: 'left'});
+    ScrollReveal().reveal('#contact', { delay: 250, origin: 'right', interval: 200});
 </script>
 <!-- MAIN JS -->    
 <script src="script.js"></script>

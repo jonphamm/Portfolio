@@ -118,7 +118,6 @@ nav ul li a:hover {
     background-color: red;
     color: white; 
     border: 2px solid red;
-    margin-left: 15px;
 }
 
 .left-intro a:hover {
@@ -190,16 +189,17 @@ nav ul li a:hover {
 }
 
 .icons {
-    font-size: 40px;
+    font-size: 35px;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 20px;
+    transition: transform 0.5s;
+    display: inline-block;
 }
 
 .icons:hover {
-    color: rgb(255, 255, 0);
-    transition: 0.75s;
-    font-size: 42px;
+    color: yellow;
+    transform: translateY(-5px);
 }
 
 
@@ -271,7 +271,7 @@ nav ul li a:hover {
 .layer {
     width: 100%;
     height: 0; /* zero height hides hover effect over portfolio projects */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), red);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -306,9 +306,47 @@ nav ul li a:hover {
 }
 
 /* --------------------- CONTACT SECTION --------------------- */
+#contact {
+    padding: 150px;
+}
 
+.sub-title3 {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+}
 
+.sub-title3::before {
+    content: "";
+    position: absolute;
+    left: 40%;
+    bottom: 16px;
+    width: 270px;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(255, 0, 0);
+    z-index: -1;
+  }
 
+.contact-left {
+    flex-basis: 35%;
+
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: red;
+    margin-right: 15px;
+    font-size: 25px;
+}
 
 
 
