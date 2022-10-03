@@ -117,7 +117,7 @@
                             <textarea name="message" rows="6" class="text" placeholder="Your Message"></textarea>
                             <button type="submit" class="submit-btn">Submit</button>
                         </form>
-                        <span id="msg">Message sent!</span>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
@@ -172,9 +172,9 @@ ScrollReveal().reveal('.work', { delay: 250, origin: 'left', interval: 200 });
 ScrollReveal().reveal('.icons i', { delay: 0, origin: 'bottom', interval: 200 });
 ScrollReveal().reveal('.about-col-1', { delay: 0, origin: 'left'});
 ScrollReveal().reveal('.sub-title3', { delay: 250, origin: 'left'});
-//ScrollReveal().reveal('.email, .text, .name', { delay: 250, origin: 'right', interval: 200});
+ScrollReveal().reveal('.email, .text, .name', { delay: 250, origin: 'right', interval: 200});
 ScrollReveal().reveal('.email-icon, .phone-num', { delay: 250, origin: 'right', interval: 200});
-//ScrollReveal().reveal('.submit-btn', { delay: 250, origin: 'bottom'});
+ScrollReveal().reveal('.submit-btn', { delay: 250, origin: 'bottom'});
 </script>
 
 <!---------- TYPING EFFECT IN INTRO --------->
@@ -192,11 +192,18 @@ ScrollReveal().reveal('.email-icon, .phone-num', { delay: 250, origin: 'right', 
 <script>
     const scriptURL = '<https://script.google.com/macros/s/AKfycbyUMz4kb42krgbX-b-Wd952be0FJdVxDPAWdBg15usWjx7-qlH70iCQLjqvBuFo0Xkd/exec>'
   const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg');
 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response =>     {
+          msg.innerHTML = "Message sent successfully!"
+          setTimeout(function(){
+            msg.innerHTML = "";
+          }, 5000)
+          form.reset();
+      })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
