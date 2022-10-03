@@ -69,14 +69,6 @@ nav ul li a:hover {
     color: rgb(255, 255, 0);
 }
 
-#progress-bar {
-    height: 6px;
-    width: 200px;
-    background-color: white;
-    top: 0;
-    position: fixed;
-} 
-
 /* --------------------- INTRO SECTION ------------------------- */
 .container {
     display: grid;
@@ -157,7 +149,7 @@ nav ul li a:hover {
 .about-col-1 img {
     width: 100%;
     padding-left: 10%;
-    height: 600px;
+    height: 500px;
     border-radius: 16px;
 }
 
@@ -170,6 +162,7 @@ nav ul li a:hover {
     font-weight: 600;
     color: white;
     position: relative;
+    margin-bottom: 15px;
 }
 
 .sub-title1::before {
@@ -186,6 +179,7 @@ nav ul li a:hover {
 
 .text-box {
     margin-bottom: 20px;
+    margin-right: 30px;
 }
 
 .icons {
@@ -219,7 +213,7 @@ nav ul li a:hover {
 
 /* -------------------- PORTFOLIO SECTION ------------------ */
 #portfolio {
-    padding: 200px 150px 150px 150px;
+    padding: 150px 150px 150px 150px;
 }
 .sub-title2 {
     font-size: 60px;
@@ -307,7 +301,7 @@ nav ul li a:hover {
 
 /* --------------------- CONTACT SECTION --------------------- */
 #contact {
-    padding: 150px;
+    padding: 110px 150px;
 }
 
 .sub-title3 {
@@ -331,7 +325,14 @@ nav ul li a:hover {
 
 .contact-left {
     flex-basis: 35%;
+}
+.phone-num a {
+    text-decoration: none;
+    color: white;
+}
 
+.phone-num a:hover {
+    color: yellow;
 }
 
 .contact-right {
@@ -399,6 +400,12 @@ form .btn {
     padding: 14px 60px;
 }
 
+#msg {
+    color: #61b752;
+    margin-top: -80px;
+    display: block;
+}
+
 /* ------------------ FOOTER ---------------- */
 .footer {
     width: 100%;
@@ -407,7 +414,8 @@ form .btn {
     background: #000000;
     font-weight: 300;
     border-top: 1px solid rgb(0, 0, 0);
-    box-shadow: 1px -2px 5px gray;
+    box-shadow: 1px -2px 8px gray;
+    margin-top: 60px;
 }
 
 /* -------------------CSS for smaller screens (mobile) ------------------ */
@@ -427,6 +435,9 @@ nav .fas {
         display: block;
         font-size: 25px;
     }
+    nav .fas:hover {
+        color: yellow;
+    }
     nav ul {
         background: rgb(255, 78, 78);
         position: fixed;
@@ -436,6 +447,7 @@ nav .fas {
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        transition: right 0.75s;
     }
     nav ul li {
         display: block;
@@ -447,6 +459,85 @@ nav .fas {
         left: 25px;
         cursor: pointer;
     }
-
-
+    nav ul .fas:hover {
+        color: yellow;
+    }
+    #portfolio {
+        padding: 100px 150px 150px 150px;
+    }
+    .sub-title1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .sub-title1::before {
+        content: "";
+        position: absolute;
+        left: 25%;
+        bottom: 8px;
+        width: 150px;
+        height: 14px;
+        transform: skew(-12deg) translateX(-50%);
+        background: rgba(255, 0, 0);
+        z-index: -1;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    .about-col-1 {
+        margin-bottom: 25px;
+        padding: 0 30px;
+    }
+    .about-col-2 {
+        font-size: 14px;
+        padding: 30px;
+    }
+    .sub-title2 {
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+        position: relative;
+    }
+    .sub-title2::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 11px;
+        width: 130px;
+        height: 14px;
+        transform: skew(-12deg) translateX(-50%);
+        background: rgba(255, 0, 0);
+        z-index: -1;
+    }
+    .work-list {
+        justify-content: center;
+    }
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    .contact-right {
+        margin-top: 20px;
+    }
+    .sub-title3 {
+        font-size: 34px;
+        font-weight: 600;
+        color: white;
+        position: relative;
+    }
+    .sub-title3::before {
+        content: "";
+        position: absolute;
+        left: 55%;
+        bottom: 7px;
+        width: 140px;
+        height: 14px;
+        transform: skew(-12deg) translateX(-50%);
+        background: rgba(255, 0, 0);
+        z-index: -1;
+      }
+      .email-icon, .phone-num {
+        font-size: 13px;
+    }
+    .contact-left p i {
+        font-size: 18px
+    }
 }
