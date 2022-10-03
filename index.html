@@ -15,16 +15,17 @@
     <div id="header">
         <!--------------------- NAVBAR --------------------->
         <nav>
-            <img src="images/Logo 2 Trans.png" class="logo" style="width: 400px; height: 100%">
-            <ul>
+            <img src="images/Logo 2 Trans.png" class="logo" style="width: 300px; height: 100%">
+            <ul id="sidemenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Contact</a></li>
+                <i class="fas fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
-        <div class="nav-toggle"></div>
 
         <!---------------------- INTRO SECTION --------------------->
         
@@ -106,20 +107,27 @@
                 <div class="row">
                     <div class="contact-left">
                         <h1 class="sub-title3">Contact Me</h1>
-                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>jonpham09@gmail.com</p>
-                        <p><i class="fa-sharp fa-solid fa-phone"></i>(954) 655-7852</p>
+                        <p class="email-icon"><i class="fa-sharp fa-solid fa-paper-plane"></i>jonpham09@gmail.com</p>
+                        <p class="phone-num"><i class="fa-sharp fa-solid fa-phone"></i>(954) 655-7852</p>
                     </div>
                     <div class="contact-right">
                         <form>
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit">Submit</button>
+                            <input type="text" name="Name" class="text" placeholder="Your Name" required>
+                            <input type="email" name="Email" class="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" class="text" placeholder="Your Message"></textarea>
+                            <button type="submit" class="submit-btn">Submit</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+
+    <!---------------- FOOTER ----------------->
+    <div class="footer">
+        <p>
+            Jon Pham | Portfolio 2022
+        </p>
+    </div>
 
     <!-- services section 
     <div id="services">
@@ -143,27 +151,32 @@
         </div>
     </div> -->
     
-<!-- SCROLL REVEAL EFFECT -->
+<!---------- MAIN JS ------------->    
+<script src="script.js"></script>
+
+<!--------- SCROLL REVEAL EFFECT in JS ---------->
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
-    ScrollReveal({
-        // resets after scrolling away --> reset: true,
-        distance: '130px',
-        duration: 950,
-        delay: 0
-    });
+ScrollReveal({
+    // resets after scrolling away --> reset: true,
+    distance: '150px',
+    duration: 950,
+    delay: 0
+});
 
-    ScrollReveal().reveal('.sub-title1, .text-box', { delay: 0, origin: 'right', interval: 200 });
-    ScrollReveal().reveal('.sub-title2, .position', { delay: 0, origin: 'left' });
-    ScrollReveal().reveal('.contact-btn, .cv-btn', { delay: 0, origin: 'bottom', interval: 200 });
-    ScrollReveal().reveal('.work', { delay: 0, origin: 'left', interval: 200 });
-    ScrollReveal().reveal('.icons i', { delay: 0, origin: 'bottom', interval: 200 });
-    ScrollReveal().reveal('.about-col-1', { delay: 0, origin: 'left'});
-    ScrollReveal().reveal('#contact', { delay: 250, origin: 'right', interval: 200});
+ScrollReveal().reveal('.sub-title1, .text-box', { delay: 0, origin: 'right', interval: 200 });
+ScrollReveal().reveal('.sub-title2, .position', { delay: 0, origin: 'left' });
+ScrollReveal().reveal('.contact-btn, .cv-btn', { delay: 0, origin: 'bottom', interval: 200 });
+ScrollReveal().reveal('.work', { delay: 0, origin: 'left', interval: 200 });
+ScrollReveal().reveal('.icons i', { delay: 0, origin: 'bottom', interval: 200 });
+ScrollReveal().reveal('.about-col-1', { delay: 0, origin: 'left'});
+ScrollReveal().reveal('.sub-title3', { delay: 250, origin: 'left'});
+ScrollReveal().reveal('.email, .text, .name', { delay: 250, origin: 'right', interval: 200});
+ScrollReveal().reveal('.email-icon, .phone-num', { delay: 250, origin: 'right', interval: 200});
+ScrollReveal().reveal('.submit-btn', { delay: 250, origin: 'bottom'});
 </script>
-<!-- MAIN JS -->    
-<script src="script.js"></script>
-<!-- TYPING EFFECT IN INTRO -->
+
+<!---------- TYPING EFFECT IN INTRO --------->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
     var typed = new Typed(".auto-input", {
@@ -173,5 +186,17 @@
     loop: true
 })  
 </script>
+<script>
+    var sideMenu = document.getElementById('#sidemenu');
+
+function openmenu() {
+    sideMenu.style.right = '0'; // whenever right is 0, menu will be visible
+}
+
+function closemenu() {
+    sideMenu.style.right = "-200px";
+}
+</script>
+
 </body>
 </html>
