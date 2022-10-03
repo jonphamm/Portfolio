@@ -511,6 +511,9 @@ nav .fas {
     .work-list {
         justify-content: center;
     }
+    #contact {
+        justify-content: center;
+    }
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
