@@ -75,6 +75,7 @@ nav ul li a:hover {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
+    padding: 250px 0;
 }
 
 .left-intro {
@@ -123,14 +124,20 @@ nav ul li a:hover {
 }
 
 .right-intro img {
-    height: auto;
-    padding-top: 9%;
-    width: 100%;
+    
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 100px;
+    background-color: white;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
 }
 
 /* ------------------------ ABOUT ME SECTION --------------------------- */
 #about {
-    padding: 185px 0 0 0;
+    padding: 165px 0 0 0;
     color: #ababab;
     background-color: rgb(0, 0, 0);
     display: block;
@@ -213,7 +220,7 @@ nav ul li a:hover {
 
 /* -------------------- PORTFOLIO SECTION ------------------ */
 #portfolio {
-    padding: 150px 150px 150px 150px;
+    padding: 140px 150px 150px 150px;
 }
 .sub-title2 {
     font-size: 60px;
@@ -225,7 +232,7 @@ nav ul li a:hover {
 .sub-title2::before {
     content: "";
     position: absolute;
-    left: 11%;
+    left: 12%;
     bottom: 16px;
     width: 200px;
     height: 14px;
@@ -299,6 +306,111 @@ nav ul li a:hover {
     text-align: center;
 }
 
+/* --------------------- SKILLS SECTION ---------------------- */
+#skills {
+    padding: 100px;
+}
+
+.sub-title4 {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.sub-title4::before {
+    content: "";
+    position: absolute;
+    left: 51%;
+    bottom: 16px;
+    width: 110px;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(255, 0, 0);
+    z-index: -1;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.skill-box {
+    padding: 1rem;
+    cursor: pointer;
+    color: #ddd;
+}
+
+.skill-box:hover > .skill-title::after, .skill-box:hover > .skill-title::before {
+    width: 35px;
+}
+
+.skill-box:hover .img {
+    transform: translateY(-10px);
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.skill-title h3 {
+    margin: 15px 15px 5px 15px;
+    color: white;
+}
+
+.skill-title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background: rgba(255, 0, 0);
+    transition: 0.5s;
+}
+
+.skill-title::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background: rgba(255, 0, 0);
+    transition: 0.5s;
+}
+
+.img {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border-radius: 45px;
+    background-color: white;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.skill-icon {
+    width: 40px;
+}
+
 /* --------------------- CONTACT SECTION --------------------- */
 #contact {
     padding: 110px 150px;
@@ -314,7 +426,7 @@ nav ul li a:hover {
 .sub-title3::before {
     content: "";
     position: absolute;
-    left: 40%;
+    left: 48%;
     bottom: 16px;
     width: 270px;
     height: 14px;
