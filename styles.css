@@ -202,15 +202,16 @@ nav ul li a:hover {
 .icons {
     font-size: 35px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: yellow;
     margin: 20px;
     transition: transform 0.5s;
     display: inline-block;
 }
 
 .icons:hover {
-    color: yellow;
+    color: white;
     transform: translateY(-5px);
+    transition: 0.7s;
 }
 
 
@@ -269,6 +270,7 @@ nav ul li a:hover {
     box-shadow: 0 0 4px 4px white;
     position: relative;
     overflow: hidden;
+    background-color: white;
 }
 
 .work img {
@@ -289,7 +291,7 @@ nav ul li a:hover {
 .layer {
     width: 100%;
     height: 0; /* zero height hides hover effect over portfolio projects */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), red);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), red);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -308,6 +310,14 @@ nav ul li a:hover {
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
+    font-size: 30px;
+    color: yellow;
+}
+
+.layer p {
+    color: rgb(221, 221, 221);
+    margin-bottom: 15px;
+    font-size: 15px;
 }
 
 .layer a {
@@ -321,6 +331,11 @@ nav ul li a:hover {
     height: 60px;
     border-radius: 50%;
     text-align: center;
+}
+
+.layer a:hover {
+    background-color: yellow;
+    transition: 0.5s ease-in-out;
 }
 
 /* --------------------- SKILLS SECTION ---------------------- */
@@ -718,6 +733,30 @@ nav .fas {
     .work-list {
         justify-content: center;
         width: 100%;
+    }
+    .layer {
+        padding: 0 20px;
+        font-size: 14px;
+        transition: height 0.5s;
+    }
+    .layer h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .layer p {
+        font-size: 12px;
+    }
+    .layer a {
+        margin-top: 20px;
+        color: #ff004f;
+        font-size: 18px;
+        text-decoration: none;
+        line-height: 40px;
+        background: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
     }
 
     /* ------- SKILLS SECTION -------- */
