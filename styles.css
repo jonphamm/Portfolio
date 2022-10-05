@@ -12,6 +12,7 @@
 body {
     background: #000000;
     color: #fff;
+    overflow: scroll;
 }
 
  /* #header {
@@ -70,19 +71,19 @@ nav ul li a:hover {
 }
 
 /* --------------------- INTRO SECTION ------------------------- */
-.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    padding: 250px 0;
+#intro {
+    display: block;
+}
+
+.intro-container {
+    padding: 15%;
 }
 
 .left-intro {
     font-size: 30px;
-    margin-left: 30px;
     padding: 0 0 0 13%;
     width: 100%;
+    flex-basis: 60%;
 }
 
 .left-intro h1 {
@@ -123,8 +124,8 @@ nav ul li a:hover {
     color: rgb(0, 0, 0);
 }
 
-.right-intro img {
-    
+/*.right-intro img {
+    flex-basis: 35%;
     width: 300px;
     height: 300px;
     position: relative;
@@ -133,6 +134,7 @@ nav ul li a:hover {
     display: flex;  
     justify-content: center;
     align-items: center;
+    padding: 8% 0 0 13%;
 }
 
 /* ------------------------ ABOUT ME SECTION --------------------------- */
@@ -592,12 +594,21 @@ nav .fas {
         background: rgba(255, 0, 0);
         z-index: -1;
     }
+    .intro-container {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
     }
     .about-col-1 {
         margin-bottom: 25px;
         padding: 0 30px;
+    }
+    .about-col-1 img {
+        width: 400px;
+        height: 400px;
     }
     .about-col-2 {
         font-size: 14px;
