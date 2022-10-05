@@ -12,7 +12,7 @@
 body {
     background: #000000;
     color: #fff;
-    overflow: scroll;
+    overflow-x: hidden;
 }
 
  /* #header {
@@ -77,6 +77,11 @@ nav ul li a:hover {
 
 .intro-container {
     padding: 15%;
+    background-image: url(https://media0.giphy.com/media/dZdPipFYim6ORRaVk1/giphy.webp?cid=ecf05e473p8xe55z2oczpd35g26a11v1yku26rb3hdcn2621&rid=giphy.webp&ct=g);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .left-intro {
@@ -139,9 +144,8 @@ nav ul li a:hover {
 
 /* ------------------------ ABOUT ME SECTION --------------------------- */
 #about {
-    padding: 165px 0 0 0;
+    padding: 165px 0;
     color: #ababab;
-    background-color: rgb(0, 0, 0);
     display: block;
 }
 
@@ -222,7 +226,12 @@ nav ul li a:hover {
 
 /* -------------------- PORTFOLIO SECTION ------------------ */
 #portfolio {
-    padding: 140px 150px 150px 150px;
+    padding: 120px 150px 150px 150px;
+    background-image: url(https://media4.giphy.com/media/cjn66yayqVbg97usN2/200w.webp?cid=ecf05e473p8xe55z2oczpd35g26a11v1yku26rb3hdcn2621&rid=200w.webp&ct=g);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .sub-title2 {
     font-size: 60px;
@@ -252,6 +261,8 @@ nav ul li a:hover {
 
 .work {
     border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 4px 4px white;
     position: relative;
     overflow: hidden;
 }
@@ -310,7 +321,7 @@ nav ul li a:hover {
 
 /* --------------------- SKILLS SECTION ---------------------- */
 #skills {
-    padding: 100px;
+    padding: 100px 150px 150px 150px;
 }
 
 .sub-title4 {
@@ -318,38 +329,55 @@ nav ul li a:hover {
     font-weight: 600;
     color: white;
     position: relative;
-    align-items: center;
-    justify-content: center;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .sub-title4::before {
     content: "";
     position: absolute;
-    left: 51%;
+    left: 8%;
     bottom: 16px;
-    width: 110px;
+    width: 100px;
     height: 14px;
     transform: skew(-12deg) translateX(-50%);
     background: rgba(255, 0, 0);
     z-index: -1;
 }
 
-.skill-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.front-end h2, .back-end h2, .other h2 {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    grid-gap: 1rem;
-    padding: 1rem;
+    font-size: 30px;
+    color: yellow;
+}
+
+.skill-container1 {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    justify-content: center;
+    padding: 16px 200px 16px 16px;
+}
+
+.skill-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+    padding: 16px 200px 16px 16px;
+}
+
+.skill-container3 {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+    padding: 16px 200px 16px 16px;
 }
 
 .skill-box {
-    padding: 1rem;
+    padding: 5px;
     cursor: pointer;
     color: #ddd;
+    margin-left: 140px;
 }
 
 .skill-box:hover > .skill-title::after, .skill-box:hover > .skill-title::before {
@@ -366,11 +394,14 @@ nav ul li a:hover {
     align-items: center;
     position: relative;
     margin-bottom: 0;
+    justify-content: right;
 }
 
-.skill-title h3 {
+.skill-title h4 {
     margin: 15px 15px 5px 15px;
     color: white;
+    justify-content: right;
+    font-size: 13px;
 }
 
 .skill-title::before {
@@ -398,11 +429,11 @@ nav ul li a:hover {
 }
 
 .img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     position: relative;
     border-radius: 45px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex;  
     justify-content: center;
     align-items: center;
@@ -410,12 +441,17 @@ nav ul li a:hover {
 }
 
 .skill-icon {
-    width: 40px;
+    width: 30px;
 }
 
 /* --------------------- CONTACT SECTION --------------------- */
 #contact {
-    padding: 110px 150px;
+    padding: 110px 150px 200px 150px;
+    background-image: url(https://media3.giphy.com/media/QWFP5vFLojlXuLtwl6/200w.webp?cid=ecf05e478glewq25uqa7yvz0ic7a1nwjendfjordppqzd9ou&rid=200w.webp&ct=g);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .sub-title3 {
@@ -529,7 +565,6 @@ form .btn {
     font-weight: 300;
     border-top: 1px solid rgb(0, 0, 0);
     box-shadow: 1px -2px 8px gray;
-    margin-top: 60px;
 }
 
 /* -------------------CSS for smaller screens (mobile) ------------------ */
@@ -538,13 +573,7 @@ nav .fas {
 }
 
 @media only screen and (max-width: 600px) {
-    .position {
-        margin-top: 100%;
-        font-size: 16px;
-    }
-    .left-intro h1 {
-        font-size: 30px;
-    }
+    /* --------- NAVBAR -------- */
     nav .fas {
         display: block;
         font-size: 25px;
@@ -576,8 +605,23 @@ nav .fas {
     nav ul .fas:hover {
         color: yellow;
     }
-    #portfolio {
-        padding: 100px 150px 150px 150px;
+
+    /* ---------- INTRO SECTION --------- */
+    #intro {
+        display: block;
+        background-image: url(https://media0.giphy.com/media/dZdPipFYim6ORRaVk1/giphy.webp?cid=ecf05e473p8xe55z2oczpd35g26a11v1yku26rb3hdcn2621&rid=giphy.webp&ct=g);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    .position {
+        padding-top: 240px;
+        font-size: 16px;
+    }
+    .left-intro h1 {
+        font-size: 30px;
     }
     .sub-title1 {
         font-size: 40px;
@@ -599,6 +643,8 @@ nav .fas {
         padding: 0;
         margin: 0;
     }
+
+    /* ----------- ABOUT SECTION ----------- */
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
     }
@@ -631,9 +677,54 @@ nav .fas {
         background: rgba(255, 0, 0);
         z-index: -1;
     }
+
+    /* ------- PORTFOLIO SECTION -------- */
+    #portfolio {
+        padding: 100px 150px 150px 150px;
+    }
     .work-list {
         justify-content: center;
     }
+
+    /* ------- SKILLS SECTION -------- */
+    .sub-title4 {
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+        position: relative;
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+    .sub-title4::before {
+        content: "";
+        position: absolute;
+        left: 56%;
+        bottom: 9px;
+        width: 70px;
+        height: 14px;
+        transform: skew(-12deg) translateX(-50%);
+        background: rgba(255, 0, 0);
+        z-index: -1;
+    }
+    .front-end h2, .back-end h2, .other h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        color: yellow;
+    }
+    .skill-container1 {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        justify-content: center;
+        padding: 16px 200px 16px 16px;
+        margin-bottom: 20px;
+    }
+    .skill-container2 {
+        margin-bottom: 20px;
+    }
+    
+    /* ------- CONTACT SECTION ------- */
     #contact {
         justify-content: center;
     }

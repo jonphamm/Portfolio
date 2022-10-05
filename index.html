@@ -105,86 +105,98 @@
     <!----------------- SKILLS SECTION -------------------->
     <div id="skills">
         <h1 class="sub-title4">Skills</h1>
-        .front-end
-        <div class="skill-container">
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="images/html.png" class="skill-icon">
+        <div class="front-end">
+            <h2>Front-End</h2>
+            <div class="skill-container1">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/html.png" class="skill-icon">
+                        </div>
+                        <h4>HTML</h4>
                     </div>
-                    <h3>HTML</h3>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/css.png" class="skill-icon">
+                        </div>
+                        <h4>CSS</h4>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/js.png" class="skill-icon">
+                        </div>
+                        <h4>JAVASCRIPT</h4>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/sass.png" class="skill-icon">
+                        </div>
+                        <h4>SASS</h4>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/react.png" class="skill-icon">
+                        </div>
+                        <h4>REACT</h4>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/bootstrap.png" class="skill-icon">
+                        </div>
+                        <h4>BOOTSTRAP</h4>
+                    </div>
                 </div>
             </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="images/css.png" class="skill-icon">
+        </div>
+        <div class="back-end">
+            <h2>Back-End</h2>
+            <div class="skill-container2">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/node.png" class="skill-icon">
+                        </div>
+                        <h4>NODE</h4>
                     </div>
-                    <h3>CSS</h3>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/next.png" class="skill-icon">
+                        </div>
+                        <h4>NEXT</h4>
+                    </div>
                 </div>
             </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="images/js.png" class="skill-icon">
+        </div>
+        <div class="other">
+            <h2>Other</h2>
+            <div class="skill-container3">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/git.png" class="skill-icon">
+                        </div>
+                        <h4>GIT</h4>
                     </div>
-                    <h3>JAVASCRIPT</h3>
                 </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="images/sass.png" class="skill-icon">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="images/github.png" class="skill-icon">
+                        </div>
+                        <h4>GITHUB</h4>
                     </div>
-                    <h3>SASS</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="images/react.png" class="skill-icon">
-                    </div>
-                    <h3>REACT</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="images/bootstrap.png" class="skill-icon">
-                    </div>
-                    <h3>BOOTSTRAP</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="images/node.png" class="skill-icon">
-                    </div>
-                    <h3>NODE</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="images/next.png" class="skill-icon">
-                    </div>
-                    <h3>NEXT</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="images/git.png" class="skill-icon">
-                    </div>
-                    <h3>GIT</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="images/github.png" class="skill-icon">
-                    </div>
-                    <h3>GITHUB</h3>
                 </div>
             </div>
         </div>
@@ -250,7 +262,7 @@
 <script>
 ScrollReveal({
     // resets after scrolling away --> reset: true,
-    distance: '150px',
+    distance: '200px',
     duration: 950,
     delay: 0
 });
@@ -265,7 +277,7 @@ ScrollReveal().reveal('.sub-title3', { delay: 250, origin: 'left'});
 ScrollReveal().reveal('.email, .text, .name', { delay: 250, origin: 'right', interval: 200});
 ScrollReveal().reveal('.email-icon, .phone-num', { delay: 250, origin: 'right', interval: 200});
 ScrollReveal().reveal('.submit-btn', { delay: 250, origin: 'bottom'});
-ScrollReveal().reveal('#skills', { delay: 250, origin: 'right'});
+ScrollReveal().reveal('#skills', { delay: 350, origin: 'left'});
 </script>
 
 <!---------- TYPING EFFECT IN INTRO --------->
