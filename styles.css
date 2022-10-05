@@ -647,6 +647,9 @@ nav .fas {
     }
 
     /* ----------- ABOUT SECTION ----------- */
+    #about {
+        padding: 100px 0;
+    }
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
     }
@@ -717,7 +720,7 @@ nav .fas {
     #skills {
         width: 100%;
         justify-content: center;
-        padding: 5%;
+        padding: 100px 0;
     }
     .sub-title4 {
         font-size: 40px;
