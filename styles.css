@@ -192,7 +192,11 @@ nav ul li a:hover {
 
 .text-box {
     margin-bottom: 20px;
-    margin-right: 30px;
+    margin-right: 80px;
+}
+
+.about-text {
+    margin-bottom: 15px;
 }
 
 .icons {
