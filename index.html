@@ -228,10 +228,11 @@
                         <p class="phone-num"><i class="fa-sharp fa-solid fa-phone"></i><a href="tel:954-655-7852">(954) 655-7852</a></p>
                     </div>
                     <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="name" class="text" placeholder="Your Name" required>
-                            <input type="email" name="email" class="email" placeholder="Your Email" required>
-                            <textarea name="message" rows="6" class="text" placeholder="Your Message"></textarea>
+                        <form action="https://formsubmit.co/jonpham09@gmail.com" method="POST">
+                            <input type="text" name="name" class="text" id="name" placeholder="Your Name" required>
+                            <input type="email" name="email" class="email" id="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" class="text" id="message" placeholder="Your Message"></textarea>
+                            <input type="hidden" name="_template" value="table">
                             <button type="submit" class="submit-btn">Submit</button>
                         </form>
                         <span id="msg"></span>
@@ -268,7 +269,8 @@
             </div>
         </div>
     </div> -->
-    
+
+
 <!---------- MAIN JS ------------->    
 <script src="script.js"></script>
 
@@ -309,7 +311,7 @@ ScrollReveal().reveal('.skill-title h4', { delay: 0, origin: 'bottom', interval:
 })  
 </script>
 
-<!----------- CONTACT FORM INPUT SENT TO GOOGLE SHEETS ---------->
+<!----------- CONTACT FORM INPUT SENT TO GOOGLE SHEETS ----------
 <script>
     const scriptURL = '<https://script.google.com/macros/s/AKfycbyUMz4kb42krgbX-b-Wd952be0FJdVxDPAWdBg15usWjx7-qlH70iCQLjqvBuFo0Xkd/exec>'
   const form = document.forms['submit-to-google-sheet']
@@ -327,7 +329,7 @@ ScrollReveal().reveal('.skill-title h4', { delay: 0, origin: 'bottom', interval:
       })
       .catch(error => console.error('Error!', error.message))
   })
-</script>
+</script> -->
 
 </body>
 </html>
