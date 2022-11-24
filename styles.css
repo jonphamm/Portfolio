@@ -592,7 +592,7 @@ nav .fas {
     display: none; /* hides menu and close icons while on desktop */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1008px) {
 
     /* --------- NAVBAR -------- */
     nav .fas {
@@ -678,8 +678,8 @@ nav .fas {
         padding: 0 20px;
     }
     .about-col-1 img {
-        width: 350px;
-        height: 350px;
+        width: 360px;
+        height: 360px;
     }
     .about-col-2 {
         font-size: 14px;
